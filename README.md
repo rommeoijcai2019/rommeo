@@ -1,7 +1,7 @@
 # Regularized Opponent Model with Maximum Entropy Objective
 
 This repo aims to provide an algorithm implementation for
-Regularized Opponent Model with Maximum Entropy Objective (ROMMEO) and its baselines.
+[Regularized Opponent Model with Maximum Entropy Objective (ROMMEO)](https://arxiv.org/abs/1905.08087) and its baselines.
 
 ## Installation
 
