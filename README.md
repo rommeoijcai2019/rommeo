@@ -1,7 +1,13 @@
 # Regularized Opponent Model with Maximum Entropy Objective
 
-This repo aims to provide an algorithm implementation for
+This repo aims to provide an algorithm implementation for IJCAI 2019 paper
 [Regularized Opponent Model with Maximum Entropy Objective (ROMMEO)](https://arxiv.org/abs/1905.08087) and its baselines.
+
+There are some additional materials avaiable here:
+
+* [Paper & Appendix](./ROMMEO_Appendix.pdf)
+* [Slides](./ROMMEO_Slides.pdf)
+* [Poster](./ROMMEO_Poster.pdf)
 
 ## Installation
 
