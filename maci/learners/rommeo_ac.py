@@ -254,13 +254,13 @@ class ROMMEO(MARLAlgorithm):
                                                            with_log_pis=True,
                                                            opponent_actions=opponent_actions)
 
-        with tf.variable_scope('target_joint_q_agent_{}'.format(self._agent_id), reuse=tf.AUTO_REUSE):
-            q_value_targets = self.target_joint_qf.output_for(
+        #with tf.variable_scope('target_joint_q_agent_{}'.format(self._agent_id), reuse=tf.AUTO_REUSE):
+        q_value_targets = self.target_joint_qf.output_for(
                 observations=self._next_observations_ph,
                 actions=actions,
                 opponent_actions=opponent_actions)
-            q_value_targets = q_value_targets - self._annealing_pl * actions_log_pis - opponent_actions_log_pis + prior_log_pis
-            assert_shape(q_value_targets, [None])
+        q_value_targets = q_value_targets - self._annealing_pl * actions_log_pis - opponent_actions_log_pis + prior_log_pis
+        assert_shape(q_value_targets, [None])
 
         self._q_values = self.joint_qf.output_for(
             self._observations_ph, self._actions_pl, self._opponent_actions_pl, reuse=True)
